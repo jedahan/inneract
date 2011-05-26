@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mainlayout"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent"
+>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	>
+        <ImageView
+            android:src = "@drawable/title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="1dp"
+            android:layout_gravity="left"
+        />
+        
+		<ImageView
+            android:src = "@drawable/act"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="1dp"
+            android:layout_gravity="right"
+        />
+        
+        <ImageView
+            android:src = "@drawable/help"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="1dp"
+            android:layout_gravity="right"
+        />
+        
+   </LinearLayout>
     
 	<com.google.android.maps.MapView
     	android:id="@+id/mapview"
-    	android:layout_width="fill_parent"
-    	android:layout_height="fill_parent"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
     	android:clickable="true"
     	android:apiKey="0tdeg8lynTHpnQsUDIXGd45_gsHlNRUCtB7lhOg"
 	/>
 
-</RelativeLayout>
+</LinearLayout>
